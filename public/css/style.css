@@ -189,7 +189,7 @@ form p span a:hover{
 
 
 .button{
-   height: 35px;
+   height: 40px;
    padding: 0 20px;
    background-color: #e74c3c;
    border: none;
@@ -228,7 +228,7 @@ form p span a:hover{
 }
 
 .post-form-field input{
-   min-width: 80%;
+   min-width: 100%;
    height: 45px;
    border-radius: 5px;
    font-size: 16px;
@@ -239,10 +239,11 @@ form p span a:hover{
  .post-form-field #create-post{
     font-weight: bold;
     font-size: 24px;
+    min-width: 80% !important;
  }
 
 .post-form-field textarea{
-   min-width: 80%;
+   min-width: 100%;
    border-radius: 5px;
    font-size: 16px;
    padding-left: 10px;
@@ -250,7 +251,9 @@ form p span a:hover{
  }
 
 .post-button{
-     margin-bottom: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 34%;
  }
 
  /*Modal*/
@@ -267,8 +270,19 @@ form p span a:hover{
     padding-top: 4%;
   }
 
+.modal-content{
+    background: white;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.modal-content .post-form-field{
+    margin: 20px 0 10px 0; 
+ }
+
 .modal .post-form{
-    width: 55%;
+    width: 80%;
 }
 
 .modal .post-form-field{
@@ -276,15 +290,20 @@ form p span a:hover{
 }
 
 .modal-close{
-    color: #f5f6fa;
+    color:#d63031;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 50%; 
+    margin-left: 75%;
   }
+  /*.modal-close2{
+    color: #0b121b;
+    font-size: 30px;
+    font-weight: bold;
+  }*/
 
-.modal-close:hover{
+  .modal-close:hover{
     cursor: pointer;
-    color: #d63031
+    color: #2c3e50;
   }
 
 #main-post .timeline, #main-user .timeline{
@@ -397,3 +416,4 @@ form p span a:hover{
     line-height: 30px;
     height: 80px;
 }
+
